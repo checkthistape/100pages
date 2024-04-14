@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;500&family=Schibsted+Grotesk&display=swap');
+
+/*.~~~~~~~~~.Uto font.~~~~~~~~~.*/
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-BlackItalic.eot');
+    src: local('Uto Black Italic'), local('Uto-BlackItalic'),
+        url('Uto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Uto-BlackItalic.woff2') format('woff2'),
+        url('Uto-BlackItalic.woff') format('woff'),
+        url('Uto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-LightItalic.eot');
+    src: local('Uto Light Italic'), local('Uto-LightItalic'),
+        url('Uto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Uto-LightItalic.woff2') format('woff2'),
+        url('Uto-LightItalic.woff') format('woff'),
+        url('Uto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-Black.eot');
+    src: local('Uto Black'), local('Uto-Black'),
+        url('Uto-Black.eot?#iefix') format('embedded-opentype'),
+        url('Uto-Black.woff2') format('woff2'),
+        url('Uto-Black.woff') format('woff'),
+        url('Uto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-ExtraBoldItalic.eot');
+    src: local('Uto Extra Bold Italic'), local('Uto-ExtraBoldItalic'),
+        url('Uto-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Uto-ExtraBoldItalic.woff2') format('woff2'),
+        url('Uto-ExtraBoldItalic.woff') format('woff'),
+        url('Uto-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-ExtraBold.eot');
+    src: local('Uto Extra Bold'), local('Uto-ExtraBold'),
+        url('Uto-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Uto-ExtraBold.woff2') format('woff2'),
+        url('Uto-ExtraBold.woff') format('woff'),
+        url('Uto-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-BoldItalic.eot');
+    src: local('Uto Bold Italic'), local('Uto-BoldItalic'),
+        url('Uto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Uto-BoldItalic.woff2') format('woff2'),
+        url('Uto-BoldItalic.woff') format('woff'),
+        url('Uto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-Bold.eot');
+    src: local('Uto Bold'), local('Uto-Bold'),
+        url('Uto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Uto-Bold.woff2') format('woff2'),
+        url('Uto-Bold.woff') format('woff'),
+        url('Uto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-ExtraLightItalic.eot');
+    src: local('Uto Extra Light Italic'), local('Uto-ExtraLightItalic'),
+        url('Uto-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Uto-ExtraLightItalic.woff2') format('woff2'),
+        url('Uto-ExtraLightItalic.woff') format('woff'),
+        url('Uto-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-Light.eot');
+    src: local('Uto Light'), local('Uto-Light'),
+        url('Uto-Light.eot?#iefix') format('embedded-opentype'),
+        url('Uto-Light.woff2') format('woff2'),
+        url('Uto-Light.woff') format('woff'),
+        url('Uto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-Italic.eot');
+    src: local('Uto Italic'), local('Uto-Italic'),
+        url('Uto-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Uto-Italic.woff2') format('woff2'),
+        url('Uto-Italic.woff') format('woff'),
+        url('Uto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-ExtraLight.eot');
+    src: local('Uto Extra Light'), local('Uto-ExtraLight'),
+        url('Uto-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Uto-ExtraLight.woff2') format('woff2'),
+        url('Uto-ExtraLight.woff') format('woff'),
+        url('Uto-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-SemiBoldItalic.eot');
+    src: local('Uto Semi Bold Italic'), local('Uto-SemiBoldItalic'),
+        url('Uto-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Uto-SemiBoldItalic.woff2') format('woff2'),
+        url('Uto-SemiBoldItalic.woff') format('woff'),
+        url('Uto-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-Regular.eot');
+    src: local('Uto Regular'), local('Uto-Regular'),
+        url('Uto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Uto-Regular.woff2') format('woff2'),
+        url('Uto-Regular.woff') format('woff'),
+        url('Uto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-Medium.eot');
+    src: local('Uto Medium'), local('Uto-Medium'),
+        url('Uto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Uto-Medium.woff2') format('woff2'),
+        url('Uto-Medium.woff') format('woff'),
+        url('Uto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-SemiBold.eot');
+    src: local('Uto Semi Bold'), local('Uto-SemiBold'),
+        url('Uto-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Uto-SemiBold.woff2') format('woff2'),
+        url('Uto-SemiBold.woff') format('woff'),
+        url('Uto-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uto';
+    src: url('Uto-MediumItalic.eot');
+    src: local('Uto Medium Italic'), local('Uto-MediumItalic'),
+        url('Uto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Uto-MediumItalic.woff2') format('woff2'),
+        url('Uto-MediumItalic.woff') format('woff'),
+        url('Uto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*.~~~~~~~~~.Uto font.~~~~~~~~~.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0 solid transparent;
+
+    font-family:'Uto';
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    line-height: 1;
+    text-rendering: optimizeSpeed;
+}
+:root {
+    --main-page-padding: 60px;
+    --main-page-background: white;
+
+    --icons-circles-padding:30px;
+
+
+    --board-backgrcolor: orange;
+    --page2-backgrcolor: green;
+    --page3-backgrcolor: lightskyblue;
+    --footer-backgrcolor: black;
+}
+div.wrapper {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+
+div.wrapper :not(div.page1 *){
+    margin-top:20px;
+}
+div.full-part {
+    width:100%;
+    height:30%;
+    background-color: var(--main-page-background);
+}
+div.full-part *{
+    
+    padding-left:var(--main-page-padding);
+    padding-right:var(--main-page-padding);
+    
+}
+
+div.page1 {
+    width: 100%;
+    height:70%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.page1 * {
+    padding-left:var(--main-page-padding);
+    padding-right:var(--main-page-padding);
+}
+
+div.page1 div.header {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    border:1px solid black;
+    margin:0;
+}
+
+div.header p#advtext {
+    font-size:30px;
+    padding-left:var(--icons-circles-padding);
+    font-style: normal;
+    font-weight: 1000;
+    
+}
+
+div.header div.clickable-elements {
+    display:flex;
+    flex-direction: row;
+    padding-right: var(--icons-circles-padding);
+}
+div.clickable-elements p{
+    padding: 0;
+}
+div.clickable-elements * {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+div.icons-transparent-panel {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:end;
+    width:100%;
+    height:10%;
+    
+    margin:0;
+    border:1px solid blue;
+    
+}
+
+div.icons-transparent-panel div.circles{
+    padding-left: var(--icons-circles-padding);
+    height:100%;
+    margin:0;
+}
+div.icons-transparent-panel div.settings-btns{
+    padding-right: var(--icons-circles-padding);
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    margin:0;
+}
+
+div.circles div.circle {
+    background-color: white;
+    height:100%;
+    margin:0;
+    width:100%;
+}
+
+div.circle .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display:inline-block;
+    margin:0;
+  }
+
+div.main-panel {
+    margin:0;
+    width:100%;
+    height:100%;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    
+    
+}
+
+div.main-panel div.mpanelbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height:100%;
+    width:100%;
+    background-color: black;
+    border-radius: 9px;
+    margin:0;
+    
+    
+}
+div.mpanelbody * {
+    border: 1px solid white;
+    
+}
+
+div.mpanelbody #motivation-text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:50px;
+    height:20%;
+    margin: 0;
+
+    font-weight: 300;
+}
+div.mpanelbody div.progress-bar {
+    
+    height:50%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    margin:0;
+}
+
+
+div.mpanelbody div.pointer {
+    height: 30%;
+    margin:0;
+}
+
+div.page2 {
+    width: 100%;
+    height:20%;
+    background-color: var(--page2-backgrcolor);
+}
+
+div.page2 * {
+    background-color: var(--board-backgrcolor);
+}
+
+div.page3 {
+    width:100%;
+    height:20%;
+    background-color: var(--page3-backgrcolor);
+}
