@@ -217,7 +217,7 @@
     box-sizing: border-box;
     border: 0 solid transparent;
 
-    font-family:'Uto';
+    font-family: 'Uto';
 }
 
 body {
@@ -226,11 +226,14 @@ body {
     line-height: 1;
     text-rendering: optimizeSpeed;
 }
+
 :root {
     --main-page-padding: 60px;
     --main-page-background: white;
 
-    --icons-circles-padding:30px;
+    --icons-circles-padding: 30px;
+
+    --between-circles-padding: 4px;
 
 
     --board-backgrcolor: orange;
@@ -238,8 +241,19 @@ body {
     --page3-backgrcolor: lightskyblue;
     --footer-backgrcolor: black;
 }
+
+.dot {
+    height: 28px;
+    width: 28px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0;
+    border: 1px solid black;
+}
+
 div.wrapper {
-    
+
     height: 100%;
     width: 100%;
     display: flex;
@@ -247,24 +261,26 @@ div.wrapper {
     background-color: blueviolet;
 }
 
-div.wrapper :not(div.page1 *){
-    margin-top:20px;
+div.wrapper :not(div.page1 *) {
+    margin-top: 20px;
 }
+
 div.full-part {
-    width:100%;
-    height:30%;
+    width: 100%;
+    height: 30%;
     background-color: var(--main-page-background);
 }
-div.full-part *{
-    
-    padding-left:var(--main-page-padding);
-    padding-right:var(--main-page-padding);
-    
+
+div.full-part * {
+
+    padding-left: var(--main-page-padding);
+    padding-right: var(--main-page-padding);
+
 }
 
 div.page1 {
     width: 100%;
-    height:70%;
+    height: 70%;
     display: flex;
     flex-direction: column;
 
@@ -274,96 +290,141 @@ div.page1 {
 
 }
 
-div.page1 * {
-    padding-left:var(--main-page-padding);
-    padding-right:var(--main-page-padding);
+div.page1 * :not(div.icons-transparent-panel *) {
+    padding-left: var(--main-page-padding);
+    padding-right: var(--main-page-padding);
+}
+
+div.page1 div.icons-transparent-panel {
+    padding-left: var(--main-page-padding);
+    padding-right: var(--main-page-padding);
+}
+
+div.page1 .main-panel {
+    padding-left: var(--main-page-padding);
+    padding-right: var(--main-page-padding);
 }
 
 div.page1 div.header {
-    width:100%;
+    width: 100%;
+    
     display: flex;
     flex-direction: row;
     align-content: space-around;
     justify-content: space-between;
-    border:1px solid black;
-    margin:0;
+    border: 1px solid black;
+    margin: 0;
 }
 
 div.header p#advtext {
-    font-size:30px;
-    padding-left:var(--icons-circles-padding);
+    font-size: 30px;
+    padding-left: var(--icons-circles-padding);
     font-style: normal;
     font-weight: 1000;
-    
+
 }
 
 div.header div.clickable-elements {
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding-right: var(--icons-circles-padding);
 }
-div.clickable-elements p{
+
+div.clickable-elements p {
     padding: 0;
 }
+
 div.clickable-elements * {
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 div.icons-transparent-panel {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:end;
-    width:100%;
-    height:10%;
-    
-    margin:0;
-    border:1px solid blue;
-    
+    align-items: end;
+    width: 100%;
+    height: 8%;
+
+    margin: 0;
+    border: 1px solid blue;
+
 }
 
-div.icons-transparent-panel div.circles{
+div.icons-transparent-panel div.circles {
+    height: 100%;
+
     padding-left: var(--icons-circles-padding);
-    height:100%;
-    margin:0;
-}
-div.icons-transparent-panel div.settings-btns{
-    padding-right: var(--icons-circles-padding);
-    height:100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    
-    margin:0;
+    align-items: center;
+    margin: 0;
+
 }
 
 div.circles div.circle {
+
     background-color: white;
-    height:100%;
-    margin:0;
-    width:100%;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 8px;
+
 }
 
-div.circle .dot {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display:inline-block;
-    margin:0;
-  }
+div.circles div.circle#c-el1 {
+    padding-right: var(--between-circles-padding);
+}
+
+div.circles div.circle#c-el2 {
+    padding-right: var(--between-circles-padding);
+    padding-left: var(--between-circles-padding);
+}
+
+div.circles div.circle#c-el3 {
+    padding-left: var(--between-circles-padding);
+}
+
+
+div.icons-transparent-panel div.settings-btns {
+    padding-right: var(--icons-circles-padding);
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+
+}
+
+div.settings-btns div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: darkorange;
+    width: 100%;
+    height: 100%;
+
+}
 
 div.main-panel {
-    margin:0;
-    width:100%;
-    height:100%;
-    color:white;
-    display:flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
     flex-direction: column;
-    
-    
 }
 
 div.main-panel div.mpanelbody {
@@ -372,50 +433,55 @@ div.main-panel div.mpanelbody {
     justify-content: center;
     align-items: center;
 
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     background-color: black;
     border-radius: 9px;
-    margin:0;
-    
-    
-}
-div.mpanelbody * {
-    border: 1px solid white;
-    
+    margin: 0;
+
+
 }
 
-div.mpanelbody #motivation-text{
-    display:flex;
+div.mpanelbody * {
+    border: 1px solid white;
+
+}
+
+div.mpanelbody #motivation-text {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size:50px;
-    height:20%;
+    font-size: 50px;
+    height: 20%;
     margin: 0;
 
     font-weight: 300;
 }
+
 div.mpanelbody div.progress-bar {
-    
-    height:50%;
-    display:flex;
+
+    height: 50%;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-    margin:0;
+
+    margin: 0;
 }
 
+div.progress-bar #progress-line {
+    width: 300px;
+}
 
 div.mpanelbody div.pointer {
     height: 30%;
-    margin:0;
+    margin: 0;
 }
 
 div.page2 {
     width: 100%;
-    height:20%;
+    height: 20%;
     background-color: var(--page2-backgrcolor);
 }
 
@@ -424,7 +490,7 @@ div.page2 * {
 }
 
 div.page3 {
-    width:100%;
-    height:20%;
+    width: 100%;
+    height: 20%;
     background-color: var(--page3-backgrcolor);
 }
